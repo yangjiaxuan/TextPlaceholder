@@ -6,15 +6,20 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+
 @interface YSTextView : UITextView
 {
     NSDictionary *_placeholderAttributes;
 }
 // 默认是空， 默认颜色是 gray
-@property(copy,nonatomic)     NSString *placeholder;
-@property (strong, nonatomic) UIColor *placeholderColor;
-// placeholder的属性字典 默认显示一行
+@property(copy,nonatomic) IBInspectable     NSString *placeholder;
+@property (strong, nonatomic) IBInspectable UIColor  *placeholderColor;
+
+// 默认显示一行
+@property (assign, nonatomic) IBInspectable NSInteger placeholderNumberOfLine;
+
+// placeholder的属性字典
 @property (strong, nonatomic) NSDictionary *placeholderAttributes;
-@property (assign, nonatomic) NSInteger     placeholderNumberOfLine;
 
 @end
