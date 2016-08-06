@@ -11,7 +11,6 @@
 - (void)awakeFromNib{
     [super awakeFromNib];
     [self addNotification];
-    [self initData];
 }
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
@@ -27,6 +26,7 @@
 }
 
 - (void)initData{
+    
     _placeholderNumberOfLine = 1;
     _placeholderColor        = [UIColor grayColor];
     

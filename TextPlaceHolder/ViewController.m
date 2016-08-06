@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _textViewXIB.placeholder = @"这是XIBplaceholder这是XIBplaceholder这是XIBplaceholder";
-    _textViewXIB.placeholderNumberOfLine = 0;
-    _textViewXIB.placeholderColor = [UIColor redColor];
+//    _textViewXIB.placeholderNumberOfLine = 0;
+//    _textViewXIB.placeholderColor = [UIColor redColor];
 }
 
 - (void)addTextView{
